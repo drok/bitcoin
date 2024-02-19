@@ -1,0 +1,18 @@
+{
+    "autotools.configurations": [
+        {
+            "name": "Default",
+            "top_builddir": "build/Default",
+            "configureArgs": [
+                "--enable-option-checking",
+                "--disable-silent-rules",
+                "V=1",
+                "CXXFLAGS=-std=c++2a",
+                "CXX=g++-9",
+                "CC=gcc-9"
+            ],
+            "makeArgs": ["-j6"]
+        }
+
+    ]
+}
